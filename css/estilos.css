@@ -256,6 +256,7 @@ main{
     font-size: 3.5rem;
     color: #333;
     text-transform: uppercase;
+ 
   }
   
 /* Propiedades de la tabla de horarios en page Ubicacion */
@@ -405,19 +406,71 @@ font-size: large
     
 }
 
-/* Tamaños responsive  */
+/*Propiedades de las Promociones  */
 
-/* header*/
-@media(max-width: 700px){
-header{
-  flex-direction: column;
- }
-
- header .navbar a{
-  margin-left: 0.5rem;
-  }
-
+body {
+	font-family: 'Teko', sans-serif;
 }
+
+.carousel-item {
+	height: 70vh;
+  margin-bottom: 20rem;
+}
+.carousel-caption {
+	bottom: 0;
+	z-index: 2;
+	text-align: left;
+}
+.carousel-caption h5 {
+	font-size: 5rem;
+  margin-bottom: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  color: #262626;
+}
+.carousel-caption p {
+	font: size 2rem;;
+	line-height: 1.9;
+	color: #262626;
+}
+.banner-info .btn {
+	padding: 10px 60px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color:black;
+	background:var(--limon);
+}
+.banner-info {
+	padding-top: 25%;
+}
+.imgBox img {
+	width: 650px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	height: 80px;
+	width: 80px;
+	outline: black;
+	background-size: 100%, 100%;
+	border-radius: 50%;
+	background-image: none;
+	color: #fff;
+	background: green;
+}
+.carousel-control-next-icon:after {
+	content: '->';
+	font-size: 55px;
+	color: #fff;
+}
+.carousel-control-prev-icon:after {
+	content: '';
+	font-size: 55px;
+	color: #fff;
+}
+.carousel-indicators [data-bs-target] {
+	background-color: green;
+}
+
+/* Tamaños responsive  */
 
 /*pagina principal*/
 @media(max-width:700px){
@@ -521,6 +574,55 @@ header{
   }
  }
 
+ /*Promociones*/
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	
+	.carousel-caption {
+		bottom: 0;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 767px) {
+	
+	.carousel-caption {
+		bottom: 0;
+		text-align: center;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.banner-info .btn {
+		padding: 0 15px;
+		font-size: 20px;
+	}
+	.imgBox .img-fluid {
+		max-width: 80%;
+		height: auto;
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		height: 50px;
+		width: 50px;
+	}
+	.carousel-control-next-icon:after {
+		font-size: 30px;
+	}
+	.carousel-control-prev-icon:after {
+		font-size: 30px;
+	}
+}
+
 /* Propiedades de las Redes Sociales */
 .red{
     position: fixed;
@@ -560,9 +662,9 @@ header{
 
  /* Propiedadesd el Footer */
  .pie{
-    display: flex;
-    font-size:medium;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 0;
-    justify-content: center;
+  display: flex;
+  font-size:medium;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0;
+  justify-content: center;
 }
