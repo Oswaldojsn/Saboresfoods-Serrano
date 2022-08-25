@@ -1,0 +1,57 @@
+/* propiedades del main en el index */
+
+.inicio .content h2{
+    font-size: 5.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.inicio .content span{
+    font-size: 3.5rem;
+    color:  #25d1b2;
+    text-transform: uppercase;
+}
+
+.inicio .content p{
+    font-size:large;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.inicio .image img{
+  width: 50vh;
+ 
+}
+
+/*pagina principal*/
+@media(max-width: $mediaIndex-700){
+    .inicio{
+     flex-direction: column;
+     
+   }
+   
+   .inicio .content p{
+     text-align: center;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     font-size: 1.6rem;
+     font-weight: bold;
+     padding: 1rem 0;
+   }
+   
+   .inicio .content h2{
+     font-size: 3.7rem;
+     text-align: center;
+   }
+   
+   .inicio .content span{
+     font-size: 3.4rem;
+    
+   }
+   .inicio .image img{
+     width: 40vh;
+   }
+   
+   }
+   
+   

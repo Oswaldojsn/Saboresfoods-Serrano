@@ -1,0 +1,28 @@
+/* tamaño de la fuenta en el HTML */
+html{
+   font-size: 62.4%;
+}
+
+/* Fondo de los Bodys en G
+eneral */
+body{
+    background: whitesmoke;
+}
+
+/* Propiedades del Main en General */
+main{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* propiedades de la class .inicio */
+  .inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/fondo2.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }

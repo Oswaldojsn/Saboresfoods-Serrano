@@ -1,0 +1,33 @@
+/* Propiedades de los Header en general */
+
+.mi-logo{
+ 
+    font-size: clamp(1rem,3vw,1.7rem);
+    color:  #0c443a;
+  }
+  
+   .mi-logo span{
+      color: #25d1b2;
+  }
+  
+  header .navbar a{
+      font-size:clamp(1rem,3vw,1.7rem);
+      margin-left: 2rem;
+      color: #0c443a;
+  }
+  
+  header .navbar a:hover{
+      color:  #25d1b2;
+  }
+  
+  header input{
+      display: none;
+  }
+  
+  header label{
+      font-size: 3rem;
+      color:  #0c443a;
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+  }

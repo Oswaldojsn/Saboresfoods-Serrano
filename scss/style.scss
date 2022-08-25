@@ -1,0 +1,17 @@
+/* importe de estilo de letra desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/*base*/
+@import './base/reset';
+@import './base/base';
+
+/*abstract*/
+@import './abstracts/variables';
+
+/*layout*/
+@import './layout/header';
+@import './layout/socialmedia';
+@import './layout/footer';
+
+/*components*/
+@import './components/index';
