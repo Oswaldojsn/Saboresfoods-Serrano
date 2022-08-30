@@ -1,0 +1,53 @@
+/* Propiedades de la page delivery */
+.inicio .contenttres h1{
+    font-size: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .inicio .contenttres p{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #000;
+    padding: 1rem 0;
+  }
+  
+  .contenttres  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .image-dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-dos img {
+    width: 40vh;
+  }
+  
+  /* delivery*/ 
+@media(max-width:$mediaIndex-680){
+    .inicio{
+      flex-direction: column;
+    }
+    .inicio .contenttres h1{
+      font-size: 4rem; 
+    }
+    .inicio .contenttres p{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .image-dos img {
+      width: 30vh;
+    } 
+  }

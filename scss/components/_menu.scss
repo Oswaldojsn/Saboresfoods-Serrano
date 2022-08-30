@@ -1,0 +1,95 @@
+/* Propiedades de la seccion carta */
+.menu-title{
+    font-size: x-large;
+    text-align: center;
+  }
+
+.wrap{
+    max-width: 1500px;
+    margin: 0 auto;
+   
+  }
+  
+  .column-2.carta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 2rem;
+   
+ }
+
+  .arepa-title{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    color: #25d1b2;
+  }
+
+  .patacones-title{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    color: #25d1b2;
+  }
+
+  .tequeños-title{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    color: #25d1b2;
+  }
+
+  .postres-title{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    color:  #25d1b2;
+  }
+
+  .bebidas-title{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    color:  #25d1b2;
+  }
+  
+  .plato-carta{
+    display: flex;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+  }
+  
+  .img-plato-carta{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+  }
+  
+  .img-plato-carta img{
+    max-width: 100px;
+    max-height: 75px;
+  }
+  
+  .title-plato-carta{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+  }
+  
+  .precio-plato-carta{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /* carta*/
+@media (max-width:$mediaIndex-680){
+    .column-2.carta{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }

@@ -1,0 +1,78 @@
+/* Propiedades de la Ubicacion */
+.flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3.5rem;
+    color: #333;
+    text-transform: uppercase;
+ 
+  }
+  
+/* Propiedades de la tabla de horarios en page Ubicacion */
+.container-table{
+  width: 30%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 50px;
+}
+
+.table-title{
+grid-column-start:1 ;
+grid-column-end: 3;
+background: #25d1b2;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: large
+}
+
+.table-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+}
+
+/*ubicacion*/
+@media(max-width:$mediaIndex-680){
+    .flex .content{
+   font-size:small;
+  }
+   
+    .table-title{
+     text-align: center;
+     font-size:1.7rem;
+    }
+    .table-header{
+      font-size: 1.5rem;
+    
+    }
+  
+    .item{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    
+    }
+   }
