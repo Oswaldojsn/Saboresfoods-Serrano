@@ -19,7 +19,7 @@ html {
 /* Fondo de los Bodys en G
 eneral */
 body {
-  background: whitesmoke; }
+  background-color: whitesmoke; }
 
 /* Propiedades del Main en General */
 main {
@@ -47,6 +47,7 @@ main {
 /*Colores y degradados predeterminados*/
 /* propiedad para el puntero */
 /*Propiedades de las Promociones  */
+/* lista de colores*/
 /*breackpoints*/
 /*layout*/
 /* Propiedades de los Header en general */
@@ -127,7 +128,7 @@ header label {
 /* propiedades del main en el index */
 .inicio .content h2 {
   font-size: 5.5rem;
-  color: #333;
+  color: #000000;
   text-transform: uppercase; }
 
 .inicio .content span {
@@ -165,7 +166,8 @@ header label {
 /* Propiedades de la seccion carta */
 .menu-title {
   font-size: x-large;
-  text-align: center; }
+  text-align: center;
+  color: #0c443a; }
 
 .wrap {
   max-width: 1500px;
@@ -178,32 +180,33 @@ header label {
   row-gap: 1rem;
   padding: 2rem; }
 
+/* aplicando mixin a los titulos del menu */
 .arepa-title {
-  font-size: large;
+  font-size: medium;
   text-align: center;
   margin-top: 50px;
   color: #25d1b2; }
 
 .patacones-title {
-  font-size: large;
+  font-size: small;
   text-align: center;
   margin-top: 50px;
   color: #25d1b2; }
 
 .tequeños-title {
-  font-size: large;
+  font-size: small;
   text-align: center;
   margin-top: 50px;
   color: #25d1b2; }
 
 .postres-title {
-  font-size: large;
+  font-size: small;
   text-align: center;
   margin-top: 50px;
   color: #25d1b2; }
 
 .bebidas-title {
-  font-size: large;
+  font-size: small;
   text-align: center;
   margin-top: 50px;
   color: #25d1b2; }
@@ -211,7 +214,7 @@ header label {
 .plato-carta {
   display: flex;
   align-items: center;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #0c443a;
   border-radius: 8px; }
 
 .img-plato-carta {
@@ -224,7 +227,7 @@ header label {
   max-height: 75px; }
 
 .title-plato-carta {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #25d1b2;
   border-bottom: none;
   border-top: none;
   flex-basis: 60%;
@@ -247,7 +250,7 @@ header label {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: #0c443a;
   text-transform: uppercase; }
 
 .inicio .contenttres p {
@@ -255,7 +258,7 @@ header label {
   text-align: center;
   font-weight: bold;
   font-size: 1.7rem;
-  color: #000;
+  color: #000000;
   padding: 1rem 0; }
 
 .contenttres a {
@@ -296,8 +299,11 @@ header label {
   align-items: center;
   flex-direction: column;
   font-size: 3.5rem;
-  color: #333;
+  color: #000000;
   text-transform: uppercase; }
+
+.flex .content h1 {
+  color: #0c443a; }
 
 /* Propiedades de la tabla de horarios en page Ubicacion */
 .container-table {
@@ -311,7 +317,7 @@ header label {
   grid-column-start: 1;
   grid-column-end: 3;
   background: #25d1b2;
-  color: black;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,12 +357,12 @@ header label {
 /* Propiedades de la page Contacto */
 .inicio .contentdos h1 {
   font-size: 5.5rem;
-  color: #333;
+  color: #000000;
   text-transform: uppercase; }
 
 .inicio .contentdos span {
   font-size: 3.5rem;
-  color: var(--limon);
+  color: #25d1b2;
   text-transform: uppercase; }
 
 .inicio .contentdos h3 {
@@ -367,7 +373,7 @@ header label {
 /* Propiedades del Formulario de contactos */
 .logo {
   text-align: center;
-  font-size: 3em; }
+  font-size: 3rem; }
 
 .contact-form {
   background: #222222; }
@@ -394,25 +400,25 @@ header label {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
-  border-bottom: 1px solid #d63031; }
+  color: #ffffff;
+  border-bottom: 1px solid #a00b0b; }
 
 .contact-form form button {
-  background: #B70E21;
+  background: #a00b0b;
   border: 0;
   text-transform: uppercase;
   padding: 1em; }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #d63031;
-  color: #fff;
+  background: #a00b0b;
+  color: #ffffff;
   transition: background-color 1s ease-out;
   outline: 0; }
 
 /* propiedades de la informacion de contacto en el Formulario */
 .contact-info {
-  background: #000;
+  background: #000000;
   font-size: large; }
 
 .contact-info h4, .contact-info ul, .contact-info p {
@@ -426,9 +432,7 @@ header label {
     grid-template-columns: 2fr 1fr; }
   .contact-wrapper > * {
     padding: 2em; }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
+  .contact-info h4, .contact-info ul, .contact-info p {
     text-align: left; } }
 
 /*Propiedades de las Promociones  */
@@ -449,19 +453,31 @@ body {
   margin-bottom: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #262626; }
+  color: #000000; }
 
 .carousel-caption p {
   font: size 2rem;
   line-height: 1.9;
-  color: #262626; }
+  color: #000000; }
 
-.banner-info .btn {
+/*aplicando extend en los botones */
+.btn, .banner-info .btn1, .banner-info .btn2, .banner-info .btn3 {
   padding: 10px 60px;
   font-size: 30px;
   text-transform: uppercase;
-  color: black;
-  background: #25d1b2; }
+  color: #000000; }
+
+.banner-info .btn1 {
+  text-decoration: none;
+  background-color: #25d1b2; }
+
+.banner-info .btn2 {
+  text-decoration: none;
+  background-color: #0c443a; }
+
+.banner-info .btn3 {
+  text-decoration: none;
+  background-color: aquamarine; }
 
 .banner-info {
   padding-top: 25%; }
@@ -472,25 +488,25 @@ body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 80px;
   width: 80px;
-  outline: black;
+  outline: #000000;
   background-size: 100%, 100%;
   border-radius: 50%;
   background-image: none;
-  color: #fff;
-  background: green; }
+  color: #ffffff;
+  background: #25d1b2; }
 
 .carousel-control-next-icon:after {
   content: '->';
   font-size: 55px;
-  color: #fff; }
+  color: #000000; }
 
 .carousel-control-prev-icon:after {
   content: '';
   font-size: 55px;
-  color: #fff; }
+  color: #ffffff; }
 
 .carousel-indicators [data-bs-target] {
-  background-color: green; }
+  background-color: #0c443a; }
 
 /*Promociones*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -512,7 +528,7 @@ body {
     width: 100%;
     line-height: 1.6;
     font-size: 12px; }
-  .banner-info .btn {
+  .banner-info .btn, .banner-info .btn1, .banner-info .btn2, .banner-info .btn3 {
     padding: 0 15px;
     font-size: 20px; }
   .imgBox .img-fluid {

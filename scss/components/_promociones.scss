@@ -18,19 +18,39 @@ body {
   margin-bottom: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-  color: #262626;
+  color:$blackletters;
 }
 .carousel-caption p {
-	font: size 2rem;;
+	font: size 2rem;
 	line-height: 1.9;
-	color: #262626;
+	color:$blackletters;
 }
-.banner-info .btn {
+
+/*aplicando extend en los botones */
+
+.btn{
 	padding: 10px 60px;
 	font-size: 30px;
 	text-transform: uppercase;
-	color:black;
-	background: #25d1b2;
+	color:$blackletters;
+}
+
+.banner-info .btn1 {
+	@extend .btn;
+	text-decoration: none;
+	background-color: $limon;
+}
+
+.banner-info .btn2 {
+	@extend .btn;
+	text-decoration: none;
+	background-color: $verde;
+}
+.banner-info .btn3 {
+	@extend .btn;
+	text-decoration: none;
+	background-color: aquamarine;
+	
 }
 .banner-info {
 	padding-top: 25%;
@@ -41,25 +61,25 @@ body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
 	height: 80px;
 	width: 80px;
-	outline: black;
+	outline: $blackletters;
 	background-size: 100%, 100%;
 	border-radius: 50%;
 	background-image: none;
-	color: #fff;
-	background: green;
+	color:$secundario;
+	background: $limon;
 }
 .carousel-control-next-icon:after {
 	content: '->';
 	font-size: 55px;
-	color: #fff;
+	color:$blackletters;
 }
 .carousel-control-prev-icon:after {
 	content: '';
 	font-size: 55px;
-	color: #fff;
+	color: $secundario;
 }
 .carousel-indicators [data-bs-target] {
-	background-color: green;
+	background-color:$verde;
 }
 
 /*Promociones*/

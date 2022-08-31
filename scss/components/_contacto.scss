@@ -1,13 +1,13 @@
 /* Propiedades de la page Contacto */
 .inicio .contentdos h1{
     font-size: 5.5rem;
-    color: #333;
+    color: $blackletters;
     text-transform: uppercase;
   }
   
   .inicio .contentdos span{
     font-size: 3.5rem;
-    color: var(--limon);
+    color: $limon;
     text-transform: uppercase;
   }
   
@@ -21,12 +21,13 @@
   
   .logo {
       text-align: center;
-      font-size: 3em;
+      font-size: 3rem;
+      
   }
   
   
   .contact-form {
-    background: #222222;
+    background:$bgcontacts;
   }
   
   .contact-form form {
@@ -55,12 +56,12 @@
       border: none;
       background: none;
       outline: 0;
-      color: #fff;
-      border-bottom: 1px solid #d63031;
+      color:$secundario;
+      border-bottom: 1px solid $btsend;
   }
   
   .contact-form form button {
-      background: #B70E21;
+      background: $btsend;
       border: 0;
       text-transform: uppercase;
       padding: 1em;
@@ -68,15 +69,15 @@
   
   .contact-form form button:hover,
   .contact-form form button:focus {
-      background: #d63031;
-      color: #fff;
+      background:$btsend;
+      color:$secundario;
       transition: background-color 1s ease-out;
       outline: 0;
   }
   
   /* propiedades de la informacion de contacto en el Formulario */
   .contact-info {
-      background: #000;
+      background: $blackletters;
       font-size: large;
      
   }

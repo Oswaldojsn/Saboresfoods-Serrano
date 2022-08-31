@@ -2,6 +2,7 @@
 .menu-title{
     font-size: x-large;
     text-align: center;
+    color: $verde;
   }
 
 .wrap{
@@ -9,8 +10,8 @@
     margin: 0 auto;
    
   }
-  
-  .column-2.carta{
+
+   .column-2.carta{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 1rem;
@@ -19,45 +20,40 @@
    
  }
 
-  .arepa-title{
-    font-size: large;
-    text-align: center;
-    margin-top: 50px;
-    color: #25d1b2;
-  }
+ /* aplicando mixin a los titulos del menu */
 
-  .patacones-title{
-    font-size: large;
-    text-align: center;
-    margin-top: 50px;
-    color: #25d1b2;
-  }
+ @mixin productos ($letra) {
+  font-size:$letra;
+  text-align: center;
+  margin-top: 50px;
+  color:$limon;
+}
 
-  .tequeños-title{
-    font-size: large;
-    text-align: center;
-    margin-top: 50px;
-    color: #25d1b2;
-  }
+.arepa-title{
+@include productos(medium)
+}
 
-  .postres-title{
-    font-size: large;
-    text-align: center;
-    margin-top: 50px;
-    color:  #25d1b2;
-  }
+.patacones-title{
+  @include productos(small)
+}
 
-  .bebidas-title{
-    font-size: large;
-    text-align: center;
-    margin-top: 50px;
-    color:  #25d1b2;
-  }
+.tequeños-title{
+  @include productos(small)
+}
+
+.postres-title{
+  @include productos(small)
+}
+
+.bebidas-title{
+  @include productos(small)
+}
+ 
   
   .plato-carta{
     display: flex;
     align-items: center;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $verde;
     border-radius: 8px;
   }
   
@@ -73,7 +69,7 @@
   }
   
   .title-plato-carta{
-    border: 1px solid #e5e5e5;
+    border: 1px solid $limon;
     border-bottom: none;
     border-top: none;
     flex-basis: 60%;
