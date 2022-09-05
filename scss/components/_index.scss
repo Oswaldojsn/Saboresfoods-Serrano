@@ -2,13 +2,13 @@
 
 .inicio .content h2{
     font-size: 5.5rem;
-    color:$blackletters;
+    color:map-get( $paleta, "blackletters" );
     text-transform: uppercase;
 }
 
 .inicio .content span{
     font-size: 3.5rem;
-    color: $limon;
+    color: map-get($paleta, "limon" );
     text-transform: uppercase;
 }
 

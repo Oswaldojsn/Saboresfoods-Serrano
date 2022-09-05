@@ -48,6 +48,7 @@ main {
 /* propiedad para el puntero */
 /*Propiedades de las Promociones  */
 /* lista de colores*/
+/* paleta de colores*/
 /*breackpoints*/
 /*layout*/
 /* Propiedades de los Header en general */
@@ -390,7 +391,8 @@ header label {
   padding: 1em; }
 
 .contact-form form .block {
-  grid-column: 1 / 3; }
+  grid-column: 1 / 3;
+  font-size: small; }
 
 .contact-form form button,
 .contact-form form input,
@@ -400,7 +402,6 @@ header label {
   border: none;
   background: none;
   outline: 0;
-  color: #ffffff;
   border-bottom: 1px solid #a00b0b; }
 
 .contact-form form button {
@@ -412,7 +413,6 @@ header label {
 .contact-form form button:hover,
 .contact-form form button:focus {
   background: #a00b0b;
-  color: #ffffff;
   transition: background-color 1s ease-out;
   outline: 0; }
 
@@ -477,7 +477,7 @@ body {
 
 .banner-info .btn3 {
   text-decoration: none;
-  background-color: aquamarine; }
+  background-color: #0b9ba0; }
 
 .banner-info {
   padding-top: 25%; }
@@ -492,7 +492,6 @@ body {
   background-size: 100%, 100%;
   border-radius: 50%;
   background-image: none;
-  color: #ffffff;
   background: #25d1b2; }
 
 .carousel-control-next-icon:after {
@@ -502,8 +501,7 @@ body {
 
 .carousel-control-prev-icon:after {
   content: '';
-  font-size: 55px;
-  color: #ffffff; }
+  font-size: 55px; }
 
 .carousel-indicators [data-bs-target] {
   background-color: #0c443a; }

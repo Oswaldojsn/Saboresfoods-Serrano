@@ -15,15 +15,15 @@ body {
 }
 .carousel-caption h5 {
 	font-size: 5rem;
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-  color:$blackletters;
+    color:map-get($paleta, "blackletters" );
 }
 .carousel-caption p {
 	font: size 2rem;
 	line-height: 1.9;
-	color:$blackletters;
+	color: map-get($paleta, "blackletters" );
 }
 
 /*aplicando extend en los botones */
@@ -32,24 +32,24 @@ body {
 	padding: 10px 60px;
 	font-size: 30px;
 	text-transform: uppercase;
-	color:$blackletters;
+	color:map-get($paleta, "blackletters" );
 }
 
 .banner-info .btn1 {
 	@extend .btn;
 	text-decoration: none;
-	background-color: $limon;
+	background-color: map-get($paleta, "limon" );
 }
 
 .banner-info .btn2 {
 	@extend .btn;
 	text-decoration: none;
-	background-color: $verde;
+	background-color:map-get($paleta, "verde" );
 }
 .banner-info .btn3 {
 	@extend .btn;
 	text-decoration: none;
-	background-color: aquamarine;
+	background-color: map-get($paleta, "acuamarine" );
 	
 }
 .banner-info {
@@ -61,25 +61,25 @@ body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
 	height: 80px;
 	width: 80px;
-	outline: $blackletters;
+	outline: map-get($paleta, "blackletters" );
 	background-size: 100%, 100%;
 	border-radius: 50%;
 	background-image: none;
-	color:$secundario;
-	background: $limon;
+	color:map-get($paleta, "secundario" );
+	background: map-get($paleta, "limon" );
 }
 .carousel-control-next-icon:after {
 	content: '->';
 	font-size: 55px;
-	color:$blackletters;
+	color:map-get($paleta, "blackletters" );
 }
 .carousel-control-prev-icon:after {
 	content: '';
 	font-size: 55px;
-	color: $secundario;
+	color: map-get($paleta, "secundario" );
 }
 .carousel-indicators [data-bs-target] {
-	background-color:$verde;
+	background-color:map-get($paleta, "verde" );
 }
 
 /*Promociones*/

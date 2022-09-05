@@ -2,7 +2,7 @@
 .menu-title{
     font-size: x-large;
     text-align: center;
-    color: $verde;
+    color:map-get($paleta,"verde" );
   }
 
 .wrap{
@@ -26,7 +26,7 @@
   font-size:$letra;
   text-align: center;
   margin-top: 50px;
-  color:$limon;
+  color:map-get($paleta, "limon" );
 }
 
 .arepa-title{
@@ -53,7 +53,7 @@
   .plato-carta{
     display: flex;
     align-items: center;
-    border: 2px solid $verde;
+    border: 2px solid map-get($paleta, "verde" );
     border-radius: 8px;
   }
   
@@ -69,7 +69,7 @@
   }
   
   .title-plato-carta{
-    border: 1px solid $limon;
+    border: 1px solid map-get($paleta,"limon" );
     border-bottom: none;
     border-top: none;
     flex-basis: 60%;

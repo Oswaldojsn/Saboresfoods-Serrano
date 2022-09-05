@@ -10,13 +10,13 @@
     align-items: center;
     flex-direction: column;
     font-size: 3.5rem;
-    color:$blackletters;
+    color:map-get($paleta, "blackletters" );
     text-transform: uppercase;
  
   }
 
   .flex .content h1{
-    color: $verde;
+    color:map-get($paleta, "verde" );
   }
   
 /* Propiedades de la tabla de horarios en page Ubicacion */
@@ -31,8 +31,8 @@
 .table-title{
 grid-column-start:1 ;
 grid-column-end: 3;
-background:$limon;
-color:$blackletters;
+background:map-get($paleta, "limon" );
+color:map-get($paleta, "blackletters" );
 display: flex;
 justify-content: center;
 align-items: center;

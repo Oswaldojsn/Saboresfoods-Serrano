@@ -28,6 +28,20 @@ $blackletters: #000000;
 $bgcontacts: #222222;
 $btsend:rgb(160, 11, 11);
 
+/* paleta de colores*/ 
+
+$paleta:(
+    "primario": $primario,
+    "secundirio": $secundario,
+    "verde":$verde,
+    "limon":$limon,
+    "blackletters":$blackletters,
+    "bgcontacts":$bgcontacts,
+    "btsend":rgb(160, 11, 11),
+    "acuamarine": rgb(11, 155, 160),
+    
+);
+
 
 /*breackpoints*/
 $mediaIndex-700: 700px;
